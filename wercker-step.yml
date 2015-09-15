@@ -1,0 +1,10 @@
+name: push-publish
+version: 0.0.0
+description: Notify the PubSubHubbub(PuSH) hub.
+properties:
+  url:
+    type: string
+    default: https://pubsubhubbub.appspot.com/
+  feed:
+    type: string
+    required: true
