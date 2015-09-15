@@ -1,5 +1,5 @@
 debug 'Notifying PuSH hub'
 
-curl -i -d hub.mode=publish -d hub.url=$WERCKER_GCS_WEBSITE_DEPLOY_FEED $WERCKER_GCS_WEBSITE_DEPLOY_URL
+curl -i -d "hub.mode=publish" -d "hub.url=$WERCKER_PUSH_PUBLISH_FEED" "$WERCKER_PUSH_PUBLISH_URL"
 
 success 'Finished'
